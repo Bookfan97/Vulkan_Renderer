@@ -1,5 +1,7 @@
 #pragma once
+#include "LvePipeline.h"
 #include "Window.h"
+#include <string>
 
 namespace lve {
 class FirstApp {
@@ -11,5 +13,6 @@ class FirstApp {
 
  private:
   LveWindow lveWindow{WIDTH, HEIGHT, "Hello Vulkan!"};
+	LvePipeline lvePipeline{"shaders/simple_shader.vert.spv", "shaders/simple_shader.frag.spv"};
 };
 }

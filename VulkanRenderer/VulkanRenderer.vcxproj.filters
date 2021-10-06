@@ -19,6 +19,12 @@
     <Filter Include="Source Files\App">
       <UniqueIdentifier>{2793f3c2-f042-4984-af31-2d48c7734baa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Shaders">
+      <UniqueIdentifier>{bd943d66-d2cc-4974-bae0-46f05ae00778}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pipeline">
+      <UniqueIdentifier>{27a93678-63b5-4e43-a438-5cf89299d9eb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -30,6 +36,9 @@
     <ClCompile Include="first_app.cpp">
       <Filter>Source Files\App</Filter>
     </ClCompile>
+    <ClCompile Include="LvePipeline.cpp">
+      <Filter>Source Files\Pipeline</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">
@@ -38,5 +47,19 @@
     <ClInclude Include="first_app.h">
       <Filter>Source Files\App</Filter>
     </ClInclude>
+    <ClInclude Include="LvePipeline.h">
+      <Filter>Source Files\Pipeline</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\simple_shader.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Shaders\simple_shader.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Shaders\compile.bat">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
