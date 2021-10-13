@@ -25,6 +25,12 @@
     <Filter Include="Source Files\Pipeline">
       <UniqueIdentifier>{27a93678-63b5-4e43-a438-5cf89299d9eb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Devices">
+      <UniqueIdentifier>{8b8a63e6-6851-455b-b445-633e907a994a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Swapchain">
+      <UniqueIdentifier>{b899380d-e6e0-4c63-b091-0d1ece1ce49e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -40,7 +46,10 @@
       <Filter>Source Files\Pipeline</Filter>
     </ClCompile>
     <ClCompile Include="lve_device.cpp">
-      <Filter>Source Files\Window</Filter>
+      <Filter>Source Files\Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="lve_swap_chain.cpp">
+      <Filter>Source Files\Swapchain</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -54,7 +63,10 @@
       <Filter>Source Files\Pipeline</Filter>
     </ClInclude>
     <ClInclude Include="lve_device.h">
-      <Filter>Source Files\Window</Filter>
+      <Filter>Source Files\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="lve_swap_chain.h">
+      <Filter>Source Files\Swapchain</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
