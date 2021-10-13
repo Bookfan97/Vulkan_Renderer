@@ -39,6 +39,9 @@
     <ClCompile Include="LvePipeline.cpp">
       <Filter>Source Files\Pipeline</Filter>
     </ClCompile>
+    <ClCompile Include="lve_device.cpp">
+      <Filter>Source Files\Window</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">
@@ -49,6 +52,9 @@
     </ClInclude>
     <ClInclude Include="LvePipeline.h">
       <Filter>Source Files\Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="lve_device.h">
+      <Filter>Source Files\Window</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
