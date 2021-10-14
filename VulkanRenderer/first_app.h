@@ -1,12 +1,13 @@
 #pragma once
-#include <memory>
 
-#include "LvePipeline.h"
-#include "Window.h"
 #include "lve_device.h"
-#include <string>
-
+#include "LvePipeline.h"
 #include "lve_swap_chain.h"
+#include "Window.h"
+
+// std
+#include <memory>
+#include <vector>
 
 namespace lve {
 	class FirstApp {
@@ -35,4 +36,4 @@ namespace lve {
 		VkPipelineLayout pipelineLayout;
 		std::vector<VkCommandBuffer> commandBuffers;
 	};
-}
+}  // namespace lve

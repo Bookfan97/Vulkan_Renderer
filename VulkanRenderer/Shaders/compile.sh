@@ -1,0 +1,1 @@
+$COMSPEC /c .\compile.bat\
