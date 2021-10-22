@@ -9,6 +9,8 @@
 #include <memory>
 #include <vector>
 
+#include "lve_model.h"
+
 namespace lve {
 	class FirstApp {
 	public:
@@ -24,6 +26,7 @@ namespace lve {
 		void run();
 
 	private:
+		void loadModels();
 		void createPipelineLayout();
 		void createPipeline();
 		void createCommandBuffers();
@@ -35,5 +38,6 @@ namespace lve {
 		std::unique_ptr<LvePipeline> lvePipeline;
 		VkPipelineLayout pipelineLayout;
 		std::vector<VkCommandBuffer> commandBuffers;
+		std::unique_ptr<LveModel> lveModel;
 	};
 }  // namespace lve
