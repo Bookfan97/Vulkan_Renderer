@@ -1,1 +1,1 @@
-$COMSPEC /c .\compile.bat\
+cmd //c compile.bat
