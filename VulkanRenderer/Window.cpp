@@ -1,7 +1,5 @@
 #include "Window.h"
 
-#include <stdexcept>
-
 // std
 #include <stdexcept>
 
@@ -30,6 +28,7 @@ namespace lve {
 			throw std::runtime_error("failed to craete window surface");
 		}
 	}
+
 	void LveWindow::framebufferResizeCallback(GLFWwindow* window, int width, int height) {
 		auto lveWindow = reinterpret_cast<LveWindow*>(glfwGetWindowUserPointer(window));
 		lveWindow->framebufferResized = true;

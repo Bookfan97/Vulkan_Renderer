@@ -1,6 +1,7 @@
 #pragma once
 
 #include "lve_device.h"
+#include "lve_game_object.h"
 #include "LvePipeline.h"
 #include "lve_swap_chain.h"
 #include "Window.h"
@@ -9,15 +10,12 @@
 #include <memory>
 #include <vector>
 
-#include "lve_model.h"
-
 namespace lve {
 	class FirstApp {
 	public:
 		static constexpr int WIDTH = 800;
 		static constexpr int HEIGHT = 600;
 
-		void recreatePipeline();
 		FirstApp();
 		~FirstApp();
 
@@ -27,7 +25,7 @@ namespace lve {
 		void run();
 
 	private:
-		void loadModels();
+		void loadGameObjects();
 		void createPipelineLayout();
 		void createPipeline();
 		void createCommandBuffers();
@@ -35,13 +33,14 @@ namespace lve {
 		void drawFrame();
 		void recreateSwapChain();
 		void recordCommandBuffer(int imageIndex);
+		void renderGameObjects(VkCommandBuffer commandBuffer);
 
-		LveWindow lveWindow{ WIDTH, HEIGHT, "Hello Vulkan!" };
+		LveWindow lveWindow{ WIDTH, HEIGHT, "Vulkan Tutorial" };
 		LveDevice lveDevice{ lveWindow };
 		std::unique_ptr<LveSwapChain> lveSwapChain;
 		std::unique_ptr<LvePipeline> lvePipeline;
 		VkPipelineLayout pipelineLayout;
 		std::vector<VkCommandBuffer> commandBuffers;
-		std::unique_ptr<LveModel> lveModel;
+		std::vector<LveGameObject> gameObjects;
 	};
 }  // namespace lve

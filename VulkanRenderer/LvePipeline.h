@@ -1,11 +1,13 @@
 #pragma once
+
+#include "lve_device.h"
+
+// std
 #include <string>
 #include <vector>
-#include "lve_device.h"
 
 namespace lve {
 	struct PipelineConfigInfo {
-		PipelineConfigInfo() = default;
 		PipelineConfigInfo(const PipelineConfigInfo&) = delete;
 		PipelineConfigInfo& operator=(const PipelineConfigInfo&) = delete;
 

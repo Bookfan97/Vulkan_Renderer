@@ -1,4 +1,5 @@
 #pragma once
+
 #include "lve_device.h"
 
 // vulkan headers
@@ -73,6 +74,7 @@ namespace lve {
 
 		VkSwapchainKHR swapChain;
 		std::shared_ptr<LveSwapChain> oldSwapChain;
+
 		std::vector<VkSemaphore> imageAvailableSemaphores;
 		std::vector<VkSemaphore> renderFinishedSemaphores;
 		std::vector<VkFence> inFlightFences;
