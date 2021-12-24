@@ -54,6 +54,12 @@
     <ClCompile Include="lve_device.cpp">
       <Filter>Source Files\Devices</Filter>
     </ClCompile>
+    <ClCompile Include="lve_renderer.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="simple_render_system.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">
@@ -76,6 +82,12 @@
     </ClInclude>
     <ClInclude Include="lve_game_object.h">
       <Filter>Source Files\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="lve_renderer.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_render_system.h">
+      <Filter>Source Files\Renderer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -10,6 +10,8 @@
 #include <memory>
 #include <vector>
 
+#include "lve_renderer.h"
+
 namespace lve {
 	class FirstApp {
 	public:
@@ -26,21 +28,10 @@ namespace lve {
 
 	private:
 		void loadGameObjects();
-		void createPipelineLayout();
-		void createPipeline();
-		void createCommandBuffers();
-		void freeCommandBuffers();
-		void drawFrame();
-		void recreateSwapChain();
-		void recordCommandBuffer(int imageIndex);
-		void renderGameObjects(VkCommandBuffer commandBuffer);
 
 		LveWindow lveWindow{ WIDTH, HEIGHT, "Vulkan Tutorial" };
 		LveDevice lveDevice{ lveWindow };
-		std::unique_ptr<LveSwapChain> lveSwapChain;
-		std::unique_ptr<LvePipeline> lvePipeline;
-		VkPipelineLayout pipelineLayout;
-		std::vector<VkCommandBuffer> commandBuffers;
+		LveRenderer lveRenderer{ lveWindow, lveDevice };
 		std::vector<LveGameObject> gameObjects;
 	};
 }  // namespace lve
